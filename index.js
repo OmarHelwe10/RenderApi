@@ -5,12 +5,10 @@ const PORT = process.env.PORT || 3030;
 
 app.use(express.json());
 app.use(cors());
-app.get('/',(req,res)=>{
-    res.send('Hi All');
-})
+
 
 const xlsx=require('xlsx');
-const excel=xlsx.readFile('./information.xlsx');
+const excel=xlsx.readFile('./info.xlsx');
 let data=[];
 const sheets=excel.SheetNames;
 for (let i = 0; i < sheets.length; i++) {
