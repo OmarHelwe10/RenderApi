@@ -5,7 +5,9 @@ const PORT = process.env.PORT || 3030;
 
 app.use(express.json());
 app.use(cors());
-
+app.get('/',(req,res)=>{
+    res.send('Hi All');
+})
 
 const xlsx=require('xlsx');
 const excel=xlsx.readFile('./info.xlsx');
