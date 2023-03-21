@@ -10,7 +10,7 @@ app.get('/',(req,res)=>{
 })
 
 const xlsx=require('xlsx');
-const excel=xlsx.readFile('./NOW.xlsx');
+const excel=xlsx.readFile('./noww.xlsx');
 let data=[];
 const sheets=excel.SheetNames;
 for (let i = 0; i < sheets.length; i++) {
